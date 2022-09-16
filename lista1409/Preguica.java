@@ -11,6 +11,11 @@ public class Preguica extends Animal {
 		this.setAcao(acao);
 	}
 	
+	
+	public void seMove() {
+		System.out.println("\nAção: Subir em árvores");
+	}
+	
 	public String getSom() {
 		return som;
 	}
@@ -27,8 +32,19 @@ public class Preguica extends Animal {
 		this.acao = acao;
 	}
 	
+	/*
 	public void imprimirInfo() {
 		System.out.println("\nAnimal: Preguiça"+"\nNome: "+getNome()+"\nIdade: "+getIdade()+"\nSom: "+som+"\nAção: "+acao);
+
+	}*/
+
+	
+	public void emiteSom(String barulho) {
+		System.out.println("\nSom: Incógnita");
+	}
+	
+	public void imprimirInfo(String nome,int idade) {
+		System.out.println("\nAnimal: Preguiça"+"\nNome: "+getNome()+"\nIdade: "+getIdade());
 
 	}
 

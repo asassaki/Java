@@ -12,6 +12,10 @@ public class Cachorro extends Animal {
 		
 	}
 	
+	public void seMove() {
+		System.out.println("\nAção: Correr");
+	}
+	
 	public String getSom() {
 		return som;
 	}
@@ -28,10 +32,22 @@ public class Cachorro extends Animal {
 		this.acao = acao;
 	}
 	
+	/*
 	public void imprimirInfo(){
 		System.out.println("\nAnimal: Cachorro"+"\nNome: "+getNome()+"\nIdade: "+getIdade()+"\nSom: "+som+"\nAção: "+acao);
 		
-		
+	}*/
+	
+	
+	@Override
+	public void emiteSom(String barulho) {
+			System.out.println("\nSom: Latido");
 	}
+	
+	@Override
+	public void imprimirInfo(String nome,int idade) {
+		System.out.println("\nAnimal: Cachorro"+"\nNome: "+getNome()+"\nIdade: "+getIdade());
+	}
+	
 
 }
